@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Travi$ $cott</title>
+</head>
+<body>
+    <nav>
+        <picture>
+            <source src=".travis/cactus jack black.png" >
+            <img src="./travis/cactus jack white.png" alt="Light Mode Image" height="200px">
+        </picture>
+        <div class="nav-btns">
+            <h5><a href="#info">Info</a></h5>
+            <h5><a href="#produkter">Produkter</a></h5>
+            <h5><a href="#kontakt">Kontakt</a></h5>
+
+        </div>
+    </nav>
+
+    <section id="info">
+        <div class="info-tekst">
+            <h1>I don't need a stage to 
+                <span style="color: #47311f">perform</span>
+            </h1>
+            <p>Jacques Bermon Webster II (born April 30, 1991), known professionally as Travis Scott (formerly stylized Travi$ Scott), is an American rapper, singer, songwriter, and record producer. Throughout his career, Scott has achieved four number-one hits on the US Billboard Hot 100 chart, along with 80 total charted songs. Scott has been nominated for eight Grammy Awards and won a Billboard Music Award, Latin Grammy Award, MTV Video Music Award, and multiple BET Hip Hop Awards. As of 2020, Scott has sold over 45 million certified records in the US alone. Scott's musical style has been described as a "blend between traditional hip-hop and lo-fi" and often characterized as "ambient," with a heavily appraised influence from rappers Kanye West and Kid Cudi. His stage name is derived from the latter's real name, Scott Mescudi, combined with the name of a favorite uncle. Travis Scott is currently signed to the record label he founded, Cactus Jack Records.</p>
+            <h5>
+                <a href="#produkter">BUY MUSIC NOW</a>
+            </h5>
+            <img src="./travis/3D_Astroworld_4.gif" alt="" width="30%">
+            <img src="./travis/travis scott main photo.jpg" alt="" width="30%">
+            <img src="./travis/3D_Astroworld_5.gif" alt="" width="30%">
+            
+        </div>
+        <div class="cactus">
+            <img src="./travis/cactus jack gif.gif" alt="">
+        </div>
+
+    </section>
+
+    <section id="produkter">
+        <div class="produkter-info">
+            <h1>Travi$<span style="color: #A67E5B"> $cott</span></h1>
+            <h3>A day in my <span style="color: #A67E5B"> eyes</span></h3>
+        </div>
+        <div class="produkter-container">
+            <div class="produkt">
+                <img src="./travis/Utopia cover.png" alt="">
+                <h2><span style="color: #A67E5B">Utopia</span></h2>
+                <p>The Album Utopia</p>
+                <h5><a href="">Purchase</a></h5>
+            </div>
+            <div class="produkt">
+                <img src="./travis/Utopia cover.png" alt="">
+                <h2><span style="color: #A67E5B">Utopia</span></h2>
+                <p>The Album Utopia</p>
+                <h5><a href="">Purchase</a></h5>
+            </div>
+            <div class="produkt">
+                <img src="./travis/Utopia cover.png" alt="">
+                <h2><span style="color: #A67E5B">Utopia</span></h2>
+                <p>The Album Utopia</p>
+                <h5><a href="">Purchase</a></h5>
+            </div>
+            <div class="produkt">
+                <img src="./travis/Utopia cover.png" alt="">
+                <h2><span style="color: #A67E5B">Utopia</span></h2>
+                <p>The Album Utopia</p>
+                <h5><a href="">Purchase</a></h5>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="kontakt">  
+        <div class="kontakt_container">
+            <div class="kontakt_border">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="lname">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="country">Country</label>
+                <div class="country_select">
+                    <select id="country" name="country">
+                        <option value="select">Select a country</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <div class="submit">
+                    <button class="submit" onclick="openPopup()">
+                        Submit
+                    </button>
+                    <div class="popup" id="popup">
+                        <img src="./travis/cactus jack gif.gif" alt="">
+                        <h2>Thank <span style="color: #A67E5B">You!</span></h2>
+                        <p>Your details has been sucessfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+
+                </div>   
+                <script>
+                    let popup = document.getElementById("popup");
+
+                    function openPopup(){
+                        popup.classList.add("open-popup");
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup");
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./travis/3D_Astroworld_7.gif" alt="">
+        <p>© 2023 Cactus Jack Records. All rights reserved.</p>
+        <p>Developed by <span style="color: #A67E5B">Akuzxn</span></p>
+        <div class="links">
+            <p><a href="monkey.html">Instagram</a></p>
+            <p><a href="monkey.html">Twitter</a></p>
+            <p><a href="monkey.html">Github</a></p>
+            <p><a href="monkey.html">Discord</a></p>
+        </div>
+        <p class="w">a</p>
+        <p class="start"><a href="#info">Go to start</a></p>
+    </footer>
+</body>
+</html>
