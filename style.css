@@ -76,7 +76,7 @@ nav .nav-btns h5{
 }
 
 #info{
-  height: 160vh;
+  height: 190vh;
   text-align: center;
   
 }
@@ -101,7 +101,7 @@ nav .nav-btns h5{
 }
 
 #produkter{
-  height: 170vh;
+  height: 190vh;
   background-color: rgba(20, 12, 0, 0.582);
 }
 
@@ -110,16 +110,22 @@ nav .nav-btns h5{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 #produkter .produkter-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  justify-content: space-evenly;
 
+}
+
+@media (max-width: 1800px){
+  #produkter .produkter-container{
+    scale: 0.8;
+  }
 }
 
 #produkter .produkter-container h3{
@@ -156,7 +162,7 @@ nav .nav-btns h5{
 
 #kontakt{
   background-color: #493e2d3a;
-  height: 120vh;
+  height: 160vh;
   padding-top: 15%;
 }
 
