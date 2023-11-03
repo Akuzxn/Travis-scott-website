@@ -68,7 +68,7 @@ nav .nav-btns a{
 
 nav .nav-btns a:hover{
   border-bottom: 3px solid white;
-  color: #755540;
+  color: #CA9B72;
 }
 
 nav .nav-btns h5{
@@ -76,7 +76,7 @@ nav .nav-btns h5{
 }
 
 #info{
-  height: 190vh;
+  height: 230vh;
   text-align: center;
   
 }
@@ -84,6 +84,7 @@ nav .nav-btns h5{
 #info .img{
   position: absolute;
 }
+
 
 
 #info h5 a{
@@ -100,9 +101,17 @@ nav .nav-btns h5{
   background-color: white;
 }
 
+#info .info-tekst p{
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 25%;
+}
+
 #produkter{
   height: 190vh;
-  background-color: rgba(20, 12, 0, 0.582);
+  background-color: #140c00;
 }
 
 #produkter .produkter-info{
@@ -157,7 +166,7 @@ nav .nav-btns h5{
 
 #produkter .produkter-container h5 a:hover{
   border-bottom: 3px solid white;
-  color: #755540;
+  color: #CA9B72;
 }
 
 #kontakt{
@@ -274,6 +283,11 @@ footer{
 
 footer .links a{
   border-bottom: 5px solid white;
+  transition: 0.3s;
+}
+
+footer .links a:hover{
+  color: #CA9B72;
 }
 
 footer .w{
@@ -281,11 +295,16 @@ footer .w{
 }
 
 footer .start a{
-  color: #A67E5B;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+footer .start a:hover{
+  color: #CA9B72;
 }
 
 .popup{
-  width: 400px;
+  width: 300px;
   background: rgb(0, 0, 0);
   border-radius: 6px;
   position: absolute;
@@ -297,6 +316,11 @@ footer .start a{
   color: #ffffff;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
+  height: 90%;
+}
+
+.popup img{
+  width: 50%;
 }
 
 .open-popup{
